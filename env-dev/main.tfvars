@@ -19,12 +19,12 @@ vpc = {
 
     private_subnets ={
       web-az1 = {
-        name = "public-az1"
+        name = "web-az1"
         cidr_block = "10.0.2.0/24"
         availability_zone = "us-east-1a"
       }
       web-az2 = {
-        name = "public-az2"
+        name = "web-az2"
         cidr_block = "10.0.3.0/24"
         availability_zone = "us-east-1b"
       }
