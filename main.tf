@@ -22,7 +22,6 @@ module "vpc" {
   skip_final_snapshot     = each.value["skip_final_snapshot"]
   engine_version          = each.value["engine_version"]
   subnet_ids              = local.db_subnet_ids
-   vpc_id                 = module.vpc["main"].vpc_id
 }
 
 output "vpc" {
