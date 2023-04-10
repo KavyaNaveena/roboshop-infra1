@@ -75,3 +75,12 @@ rds = {
      skip_final_snapshot = true
    }
 }
+
+elasticacge = {
+  main = {
+       engine   = "redis"
+       engine_version = "6.x"
+       redis_cache_nodes = 1
+       node_type = "cache.t3.micro"
+  }
+}
