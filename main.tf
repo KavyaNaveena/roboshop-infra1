@@ -60,3 +60,14 @@ module "elasticache" {
   num_cache_nodes         = each.value["num_cache_nodes"]
   node_type               = each.value["node_type"]
 }
+
+module "rabbitmq" {
+  source = "git::https://github.com/KavyaNaveena/tf-module-rabbitmq.git"
+  env    = var.env
+  tags   = var.tags
+
+  subnet_ids  = local.db_subnet_ids
+
+  for_each    = var.rabbitmq
+  instance_type = each.value["instance_type"]
+}

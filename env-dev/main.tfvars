@@ -85,3 +85,9 @@ elasticache = {
        num_cache_nodes = 1
   }
 }
+
+rabbitmq = {
+  main = {
+    instance_type = "t3.micro"
+  }
+}
