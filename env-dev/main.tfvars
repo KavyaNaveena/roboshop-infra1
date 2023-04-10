@@ -76,7 +76,7 @@ rds = {
    }
 }
 
-elasticacge = {
+elasticache = {
   main = {
        engine   = "redis"
        engine_version = "6.x"
