@@ -48,7 +48,7 @@ module "vpc" {
 #  instance_class          = each.value["instance_class"]
 #}
 #
-#module "elasticache" {
+# module "elasticache" {
 #  source = "git::https://github.com/KavyaNaveena/tf-module-elasticache.git"
 #  env    = var.env
 #  tags   = var.tags
