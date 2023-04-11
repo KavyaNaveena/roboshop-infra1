@@ -84,7 +84,7 @@ module "alb" {
   subnets = lookup(local.subnet_ids, each.value["subnet_name"], null )
 }
 
-module "apps" {
+module "app" {
   source = "git::https://github.com/KavyaNaveena/tf-module-app.git"
   env    = var.env
   tags   = var.tags
