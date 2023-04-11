@@ -93,7 +93,6 @@ rabbitmq = {
 }
 
 alb = {
-  main = {
     public = {
       subnet_name = "public"
       name = "public"
@@ -107,5 +106,4 @@ alb = {
       internal = "true"
       load_balancer_type = "application"
     }
-  }
 }
