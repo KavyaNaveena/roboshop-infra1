@@ -166,7 +166,7 @@ app = {
     min_size           = 1
     subnet_name        = "web"
     port               = 8080
-    allow_apps_to      = "public"
+    allow_app_to      = "public"
   }
 }
 
