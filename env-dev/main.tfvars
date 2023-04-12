@@ -1,4 +1,5 @@
 env = "dev"
+bastion_cidr = ["3.239.246.39/32"]
 
 vpc = {
   main = {

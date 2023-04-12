@@ -88,6 +88,8 @@ module "app" {
   source = "git::https://github.com/KavyaNaveena/tf-module-app.git"
   env    = var.env
   tags   = var.tags
+  bastion_cidr = var.bastion_cidr
+  vpc_id = module.vpc["main"].vpc_id
 
   for_each = var.app
   component = each.value["component"]
